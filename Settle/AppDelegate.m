@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SettleConstants.h"
 #import <Venmo-iOS-SDK/Venmo.h>
 
 @interface AppDelegate ()
@@ -18,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Venmo startWithAppId:SETTLE_APP_ID secret:SETTLE_SECRET name:APP_NAME];
     
     return YES;
 }
@@ -44,6 +47,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+#pragma mark - Venmo App Response Delegate
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    if([[Venmo sharedInstance] handleOpenURL:url]){
+        return YES;
+    }
+    return NO;
 }
 
 #pragma mark - Core Data stack
