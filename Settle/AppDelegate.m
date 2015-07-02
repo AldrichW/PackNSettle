@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "SettleConstants.h"
-#import <Venmo-iOS-SDK/Venmo.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +20,17 @@
     // Override point for customization after application launch.
     
     [Venmo startWithAppId:SETTLE_APP_ID secret:SETTLE_SECRET name:APP_NAME];
+    
+    //Initialize the main window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    _rootViewController = [[WelcomeViewController alloc] init];
+    
+    _mainNavigationController = [[UINavigationController alloc] initWithRootViewController:_rootViewController];
+    [_mainNavigationController setNavigationBarHidden:NO animated:YES];
+    
+    [self.window setRootViewController:_mainNavigationController];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

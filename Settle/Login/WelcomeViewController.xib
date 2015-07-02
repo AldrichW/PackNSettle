@@ -6,8 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController">
             <connections>
-                <outlet property="loginWithVenmoButton" destination="YoI-ba-cKy" id="i2S-vB-Esj"/>
-                <outlet property="settleTitle" destination="gOP-Bw-7eN" id="9Wp-z6-R15"/>
+                <outlet property="tryVenmoButton" destination="YoI-ba-cKy" id="med-Oq-6CB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,38 +15,89 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-ba-cKy">
-                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <state key="normal" title="Login With Venmo">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="338" y="487" width="125" height="30"/>
-                    </variation>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pack &amp; Settle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOP-Bw-7eN">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="Gan-bM-ahK"/>
+                        <constraint firstAttribute="width" constant="231" id="g9J-2t-eGK"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
-                    <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="285" y="182" width="231" height="108"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Gan-bM-ahK"/>
+                            <exclude reference="g9J-2t-eGK"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Gan-bM-ahK"/>
+                            <include reference="g9J-2t-eGK"/>
+                        </mask>
                     </variation>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-ba-cKy">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.28627450980000002" green="0.69411764710000001" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="H7F-bW-yb1"/>
+                        <constraint firstAttribute="width" constant="143" id="ZjE-9a-g1S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="LOGIN">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="H7F-bW-yb1"/>
+                            <exclude reference="ZjE-9a-g1S"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="H7F-bW-yb1"/>
+                            <include reference="ZjE-9a-g1S"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="tryVenmoButtonPressed:" destination="-1" eventType="touchUpInside" id="wFd-q0-ASH"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gOP-Bw-7eN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="194" id="2Zt-Uy-NA6"/>
+                <constraint firstItem="YoI-ba-cKy" firstAttribute="top" secondItem="gOP-Bw-7eN" secondAttribute="bottom" constant="267" id="Hg5-Iq-hSj"/>
+                <constraint firstItem="gOP-Bw-7eN" firstAttribute="centerX" secondItem="YoI-ba-cKy" secondAttribute="centerX" id="KoW-tA-e0y"/>
+                <constraint firstAttribute="centerX" secondItem="gOP-Bw-7eN" secondAttribute="centerX" constant="-0.5" id="dg8-0T-7gB"/>
+            </constraints>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="YoI-ba-cKy"/>
                     <exclude reference="gOP-Bw-7eN"/>
+                    <exclude reference="YoI-ba-cKy"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2Zt-Uy-NA6"/>
+                    <exclude reference="KoW-tA-e0y"/>
+                    <exclude reference="dg8-0T-7gB"/>
+                    <exclude reference="Hg5-Iq-hSj"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=regular">
                 <mask key="subviews">
-                    <include reference="YoI-ba-cKy"/>
                     <include reference="gOP-Bw-7eN"/>
+                    <include reference="YoI-ba-cKy"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2Zt-Uy-NA6"/>
+                    <include reference="KoW-tA-e0y"/>
+                    <include reference="dg8-0T-7gB"/>
+                    <include reference="Hg5-Iq-hSj"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="404" y="472"/>
         </view>
     </objects>
 </document>

@@ -10,6 +10,5 @@
 
 @interface WelcomeViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *settleTitle;
-@property (weak, nonatomic) IBOutlet UIButton *loginWithVenmoButton;
 
 @end

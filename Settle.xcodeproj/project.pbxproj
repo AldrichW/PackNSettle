@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107FB3D91B44C03D00EB5661 /* TripObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FB3D81B44C03D00EB5661 /* TripObject.m */; };
+		107FB3DC1B44CA1600EB5661 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FB3DB1B44CA1600EB5661 /* Location.m */; };
+		107FB3E01B44D08400EB5661 /* NewTripFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FB3DE1B44D08400EB5661 /* NewTripFormViewController.m */; };
+		107FB3E11B44D08400EB5661 /* NewTripFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107FB3DF1B44D08400EB5661 /* NewTripFormViewController.xib */; };
+		107FB3E51B44DE1800EB5661 /* DataPersistenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FB3E41B44DE1800EB5661 /* DataPersistenceHelper.m */; };
+		107FB3EB1B44EA9300EB5661 /* MainApplicationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FB3E91B44EA9300EB5661 /* MainApplicationTableViewController.m */; };
+		107FB3EC1B44EA9300EB5661 /* MainApplicationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107FB3EA1B44EA9300EB5661 /* MainApplicationTableViewController.xib */; };
 		109551541B3F0B3A00B5F237 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 109551531B3F0B3A00B5F237 /* main.m */; };
 		109551571B3F0B3A00B5F237 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 109551561B3F0B3A00B5F237 /* AppDelegate.m */; };
 		1095515A1B3F0B3A00B5F237 /* Settle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 109551581B3F0B3A00B5F237 /* Settle.xcdatamodeld */; };
-		1095515D1B3F0B3A00B5F237 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095515C1B3F0B3A00B5F237 /* ViewController.m */; };
-		109551601B3F0B3A00B5F237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1095515E1B3F0B3A00B5F237 /* Main.storyboard */; };
 		109551621B3F0B3A00B5F237 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109551611B3F0B3A00B5F237 /* Images.xcassets */; };
 		109551651B3F0B3A00B5F237 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109551631B3F0B3A00B5F237 /* LaunchScreen.xib */; };
 		109551711B3F0B3A00B5F237 /* SettleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109551701B3F0B3A00B5F237 /* SettleTests.m */; };
@@ -32,15 +37,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		107FB3D71B44C03D00EB5661 /* TripObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TripObject.h; path = Model/TripObject.h; sourceTree = "<group>"; };
+		107FB3D81B44C03D00EB5661 /* TripObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TripObject.m; path = Model/TripObject.m; sourceTree = "<group>"; };
+		107FB3DA1B44CA1600EB5661 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Model/Location.h; sourceTree = "<group>"; };
+		107FB3DB1B44CA1600EB5661 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = Model/Location.m; sourceTree = "<group>"; };
+		107FB3DD1B44D08400EB5661 /* NewTripFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewTripFormViewController.h; path = LoggedIn/NewTripFormViewController.h; sourceTree = "<group>"; };
+		107FB3DE1B44D08400EB5661 /* NewTripFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewTripFormViewController.m; path = LoggedIn/NewTripFormViewController.m; sourceTree = "<group>"; };
+		107FB3DF1B44D08400EB5661 /* NewTripFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewTripFormViewController.xib; path = LoggedIn/NewTripFormViewController.xib; sourceTree = "<group>"; };
+		107FB3E31B44DE1800EB5661 /* DataPersistenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataPersistenceHelper.h; path = Helpers/DataPersistenceHelper.h; sourceTree = "<group>"; };
+		107FB3E41B44DE1800EB5661 /* DataPersistenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataPersistenceHelper.m; path = Helpers/DataPersistenceHelper.m; sourceTree = "<group>"; };
+		107FB3E81B44EA9300EB5661 /* MainApplicationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainApplicationTableViewController.h; path = LoggedIn/MainApplicationTableViewController.h; sourceTree = "<group>"; };
+		107FB3E91B44EA9300EB5661 /* MainApplicationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainApplicationTableViewController.m; path = LoggedIn/MainApplicationTableViewController.m; sourceTree = "<group>"; };
+		107FB3EA1B44EA9300EB5661 /* MainApplicationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainApplicationTableViewController.xib; path = LoggedIn/MainApplicationTableViewController.xib; sourceTree = "<group>"; };
 		1095514E1B3F0B3A00B5F237 /* Settle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109551521B3F0B3A00B5F237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109551531B3F0B3A00B5F237 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		109551551B3F0B3A00B5F237 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		109551561B3F0B3A00B5F237 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		109551591B3F0B3A00B5F237 /* Settle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Settle.xcdatamodel; sourceTree = "<group>"; };
-		1095515B1B3F0B3A00B5F237 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1095515C1B3F0B3A00B5F237 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1095515F1B3F0B3A00B5F237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		109551611B3F0B3A00B5F237 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		109551641B3F0B3A00B5F237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1095516A1B3F0B3A00B5F237 /* SettleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		107FB3D01B449FE000EB5661 /* LoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				107FB3DD1B44D08400EB5661 /* NewTripFormViewController.h */,
+				107FB3DE1B44D08400EB5661 /* NewTripFormViewController.m */,
+				107FB3DF1B44D08400EB5661 /* NewTripFormViewController.xib */,
+				107FB3E81B44EA9300EB5661 /* MainApplicationTableViewController.h */,
+				107FB3E91B44EA9300EB5661 /* MainApplicationTableViewController.m */,
+				107FB3EA1B44EA9300EB5661 /* MainApplicationTableViewController.xib */,
+			);
+			name = LoggedIn;
+			sourceTree = "<group>";
+		};
+		107FB3D61B44C02000EB5661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				107FB3D71B44C03D00EB5661 /* TripObject.h */,
+				107FB3D81B44C03D00EB5661 /* TripObject.m */,
+				107FB3DA1B44CA1600EB5661 /* Location.h */,
+				107FB3DB1B44CA1600EB5661 /* Location.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		107FB3E21B44DDF400EB5661 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				107FB3E31B44DE1800EB5661 /* DataPersistenceHelper.h */,
+				107FB3E41B44DE1800EB5661 /* DataPersistenceHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		109551451B3F0B3A00B5F237 = {
 			isa = PBXGroup;
 			children = (
@@ -98,18 +145,18 @@
 		109551501B3F0B3A00B5F237 /* Settle */ = {
 			isa = PBXGroup;
 			children = (
+				10E3E1F51B41A386003EFA8B /* SettleConstants.h */,
+				10E3E1F61B41A386003EFA8B /* SettleConstants.m */,
+				107FB3E21B44DDF400EB5661 /* Helpers */,
 				1095517A1B3F238E00B5F237 /* Login */,
+				107FB3D01B449FE000EB5661 /* LoggedIn */,
+				107FB3D61B44C02000EB5661 /* Model */,
 				109551551B3F0B3A00B5F237 /* AppDelegate.h */,
 				109551561B3F0B3A00B5F237 /* AppDelegate.m */,
-				1095515B1B3F0B3A00B5F237 /* ViewController.h */,
-				1095515C1B3F0B3A00B5F237 /* ViewController.m */,
-				1095515E1B3F0B3A00B5F237 /* Main.storyboard */,
 				109551611B3F0B3A00B5F237 /* Images.xcassets */,
 				109551631B3F0B3A00B5F237 /* LaunchScreen.xib */,
 				109551581B3F0B3A00B5F237 /* Settle.xcdatamodeld */,
 				109551511B3F0B3A00B5F237 /* Supporting Files */,
-				10E3E1F51B41A386003EFA8B /* SettleConstants.h */,
-				10E3E1F61B41A386003EFA8B /* SettleConstants.m */,
 			);
 			path = Settle;
 			sourceTree = "<group>";
@@ -250,9 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109551601B3F0B3A00B5F237 /* Main.storyboard in Resources */,
 				1095517F1B3F23AA00B5F237 /* WelcomeViewController.xib in Resources */,
 				109551651B3F0B3A00B5F237 /* LaunchScreen.xib in Resources */,
+				107FB3E11B44D08400EB5661 /* NewTripFormViewController.xib in Resources */,
+				107FB3EC1B44EA9300EB5661 /* MainApplicationTableViewController.xib in Resources */,
 				109551621B3F0B3A00B5F237 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,10 +354,14 @@
 			files = (
 				1095517E1B3F23AA00B5F237 /* WelcomeViewController.m in Sources */,
 				109551571B3F0B3A00B5F237 /* AppDelegate.m in Sources */,
+				107FB3E51B44DE1800EB5661 /* DataPersistenceHelper.m in Sources */,
+				107FB3E01B44D08400EB5661 /* NewTripFormViewController.m in Sources */,
 				10E3E1F71B41A386003EFA8B /* SettleConstants.m in Sources */,
 				109551541B3F0B3A00B5F237 /* main.m in Sources */,
-				1095515D1B3F0B3A00B5F237 /* ViewController.m in Sources */,
 				1095515A1B3F0B3A00B5F237 /* Settle.xcdatamodeld in Sources */,
+				107FB3EB1B44EA9300EB5661 /* MainApplicationTableViewController.m in Sources */,
+				107FB3DC1B44CA1600EB5661 /* Location.m in Sources */,
+				107FB3D91B44C03D00EB5661 /* TripObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,14 +384,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1095515E1B3F0B3A00B5F237 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1095515F1B3F0B3A00B5F237 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		109551631B3F0B3A00B5F237 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
